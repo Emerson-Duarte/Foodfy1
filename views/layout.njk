@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    {% block head %}    
+    <title>Foodfy</title>
+    {% endblock %}
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+  </head>
+ 
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/"><img class="logo" src="logo.png" alt="Logo Foodfy"></a>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+                <li id="link_sobre"><a href = "/about">Sobre</a></li>
+                <li id="link_receitas"><a href = "/receitas">Receitas</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+    
+        
+    <footer class="footer">Todos direitos reservados, receitas Foodfy.</footer>
+    
+    
+    </body>
+</html>

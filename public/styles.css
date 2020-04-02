@@ -1,0 +1,143 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text {
+    opacity: 70%;
+    line-height: 28px;
+}
+.logo {
+    display: flex;
+    align-items: left;
+}
+.logo img {
+    width: 90px;
+}
+.menu {
+    width: 750px;
+    margin-left: 100px;
+    display: flex;
+    align-items: left;
+    font-size: 16px;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding-right: 30px;
+}
+nav ul {
+    display: flex;
+}
+li {
+    display: inline;
+    cursor: pointer;
+}
+.banner {
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    display: inline-flex;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    width: 60%;
+    height: inherit;
+    justify-content: center;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+    opacity: 80%;
+}
+.banner-img {
+    width: 45%;
+    display: flex;
+}
+.banner-img img {
+    height: 300px;
+    margin-top: 65px;
+    margin-left: 50px;
+}
+
+.container h2 {
+    margin-top: 50px;
+}
+
+.cards {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cards img{
+    border-radius: 15px;
+    width: 300px;
+    height: 140px;
+}
+
+.card {
+    display: block;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.name_product p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.by p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #777777;
+}
+
+footer {
+    height: 62px;
+    width: 100%;
+    background-color: #EEEEEE;
+    font-size: 14px;
+    text-align: center;
+    line-height: 62px;
+    color: #999999;
+}

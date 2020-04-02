@@ -1,0 +1,167 @@
+{% extends "layout.njk" %}
+
+{% block head %}    
+<title>Receitas - Foodfy</title>
+{% endblock %}
+
+{% block content %}
+
+    <section class="cards , container">
+        <div class="card" id="burger">
+            <div class="card_image">
+                <img src="/assets/burger.png" alt="hamburguer">
+            </div>
+            <div class="name_product">
+                <p>Triplo bacon burguer</p>
+            </div>
+            <div class="by">
+                <p>por Jorge Relato</p>
+            </div>
+        </div>
+
+        <div class="card" id="pizza">
+            <div class="card_image">
+                <img src="/assets/pizza.png" alt="pizza">
+            </div>
+            <div class="name_product">
+                <p>Pizza 4 estações</p>
+            </div>
+            <div class="by">
+                <p>por Fabiana Melo</p>
+            </div>
+        </div>
+
+        <div class="card" id="espaguete">
+            <div class="card_image">
+                <img src="/assets/espaguete.png" alt="espaguete">
+            </div>
+            <div class="name_product">
+                <p>Espaguete ao molho</p>
+            </div>
+            <div class="by">
+                <p>por Júlia Kinoto</p>
+            </div>
+        </div>
+
+        <div class="card" id="lasanha">
+            <div class="card_image">
+                <img src="/assets/lasanha.png" alt="lasanha">
+            </div>
+            <div class="name_product">
+                <p>Lasanha mac m' cheese</p>
+            </div>
+            <div class="by">
+                <p>por Juliano Vieira</p>
+            </div>
+        </div>
+
+        <div class="card" id="doce">
+            <div class="card_image">
+                <img src="/assets/doce.png" alt="doce">
+            </div>
+            <div class="name_product">
+                <p>Docinhos pão-do-céu</p>
+            </div>
+            <div class="by">
+                <p>por Ricardo Golvea</p>
+            </div>
+        </div>
+
+        <div class="card" id="asinhas">
+            <div class="card_image">
+                <img src="/assets/asinhas.png" alt="asinhas">
+            </div>
+            <div class="name_product">
+                <p>Asinhas de frango ao barbecue</p>
+            </div>
+            <div class="by">
+                <p>por Vania Steroski</p>
+            </div>
+        </div>
+
+        <div class="card" id="burger">
+            <div class="card_image">
+                <img src="/assets/burger.png" alt="hamburguer">
+            </div>
+            <div class="name_product">
+                <p>Triplo bacon burguer</p>
+            </div>
+            <div class="by">
+                <p>por Jorge Relato</p>
+            </div>
+        </div>
+
+        <div class="card" id="pizza">
+            <div class="card_image">
+                <img src="/assets/pizza.png" alt="pizza">
+            </div>
+            <div class="name_product">
+                <p>Pizza 4 estações</p>
+            </div>
+            <div class="by">
+                <p>por Fabiana Melo</p>
+            </div>
+        </div>
+
+        <div class="card" id="espaguete">
+            <div class="card_image">
+                <img src="/assets/espaguete.png alt="espaguete">
+            </div>
+            <div class="name_product">
+                <p>Espaguete ao molho</p>
+            </div>
+            <div class="by">
+                <p>por Júlia Kinoto</p>
+            </div>
+        </div>
+
+        <div class="card" id="lasanha">
+            <div class="card_image">
+                <img src="/assets/lasanha.png" alt="lasanha">
+            </div>
+            <div class="name_product">
+                <p>Lasanha mac m' cheese</p>
+            </div>
+            <div class="by">
+                <p>por Juliano Vieira</p>
+            </div>
+        </div>
+
+        <div class="card" id="doce">
+            <div class="card_image">
+                <img src="/assets/doce.png" alt="doce">
+            </div>
+            <div class="name_product">
+                <p>Docinhos pão-do-céu</p>
+            </div>
+            <div class="by">
+                <p>por Ricardo Golvea</p>
+            </div>
+        </div>
+
+        <div class="card" id="asinhas">
+            <div class="card_image">
+                <img src="/assets/asinhas.png" alt="asinhas">
+            </div>
+            <div class="name_product">
+                <p>Asinhas de frango ao barbecue</p>
+            </div>
+            <div class="by">
+                <p>por Vania Steroski</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal-overlay ">
+        <div class="modal">
+            <a class="close-modal">Fechar modal</a>
+            <div class="modal-content">
+                <img id="image-modal" src="" alt="asinhas">
+                <h1 id="name_product"></h1>
+                <p id="by"></p>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
