@@ -112,6 +112,7 @@ p {
     border-radius: 15px;
     width: 300px;
     height: 140px;
+    cursor: pointer;
 }
 
 .card {
@@ -140,4 +141,108 @@ footer {
     text-align: center;
     line-height: 62px;
     color: #999999;
+    margin-top: 50px;
+}
+
+
+/*========== about ================*/
+
+.about_container {
+    display: grid;
+    max-width: 940px;
+    align-items: center;
+    margin: 0 auto 50px;
+}
+
+.about_container h1 {
+    font-size: 24px;
+    color: #111111;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about_container h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about_container p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+/*=============  recipes  =====================*/
+
+.foods {
+    max-width: 940px;
+    margin: 0 auto 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.food {
+    max-width: 300px;
+}
+
+.foods .food .card_image img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+/*=============  recipe  =====================*/
+
+.foods_recipe {
+    display: grid;
+    justify-content: center;
+}
+
+.foods_recipe img {
+    max-width: 940px;
+    max-height: 280px;
+    margin: 20px auto 50px;
+    display: flex;
+    border-radius: 15px;
+    display: flex;
+}
+
+#author_recipe {
+    display: grid;
+    justify-content: center;
+    color: #777777;
+    font-size: 20px;
+}
+
+.foods_recipe h2{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+    color: #111111;
+    display: grid;
+    justify-content: center;
+}
+
+.foods_recipe h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: grid;
+}
+
+.foods_recipe li {
+    margin: 0 auto;
+    width: 940px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    display: grid;
 }
