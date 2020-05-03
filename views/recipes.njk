@@ -7,16 +7,16 @@
 {% block content %}
 
     <section class="foods">
-    {% for item in items %}
-        <div class="food" id={{item.id}}>
+    {% for recipe in recipes %}
+        <div class="food" id={{recipe.id}}>
             <div class="card_image">
-                <img src={{item.image}} alt="Imagem de {{item.title}}">
+                <img src={{recipe.image}} alt="Imagem de {{recipe.title}}">
             </div>
             <div class="name_product">
-                <p>{{item.title}}</p>
+                <p>{{recipe.title}}</p>
             </div>
             <div class="by">
-                <p>{{item.cooker}}</p>
+                <p>{{recipe.cooker}}</p>
             </div>
         </div>
     {% endfor %}
@@ -26,6 +26,4 @@
 
 {% endblock content %}
 
-{# {% block scripts %} 
-<script src="/scripts.js"></script>
-{% endblock scripts %} #}
+

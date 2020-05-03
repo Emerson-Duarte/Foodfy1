@@ -7,23 +7,23 @@
 {% block content %}
 
     <section class="foods_recipe">
-        <div id={{item.id}} class="food_recipe">
-            <img src={{item.image}} alt=Imagem de {{item.name}}>
-            <h2 id= "title_recipe">{{item.title}}</h2>
-            <p id="author_recipe">{{item.cooker}}</p>
+        <div id={{recipes.id}} class="food_recipe">
+            <img src={{recipes.image}} alt=Imagem de {{recipes.name}}>
+            <h2 id= "title_recipe">{{recipes.title}}</h2>
+            <p id="author_recipe">{{recipes.cooker}}</p>
 
             <h3>Ingredientes</h3>
-            {% for ingredient in item.ingredients %}
+            {% for ingredient in recipes.ingredients %}
                     <ul>
                     <li>{{[ingredient]}}</li>
                     </ul>
             {% endfor %}
                     <h3>Modo de preparo</h3>
-            {% for preparation in item.preparation %}
+            {% for preparation in recipes.preparation %}
                     <ol><li>{{[preparation]}}</li></ol>
             {% endfor %}
             <h3>Informações adicionais</h3>
-            <ol><li>{{item.information}}</li></ol>
+            <ol><li>{{recipes.information}}</li></ol>
         </div>
     </section>
 {% endblock content %}

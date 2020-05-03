@@ -1,0 +1,77 @@
+<div class="item">
+
+    <div>Nome da receita</div>
+        <div class="title">
+            <input 
+                type="text" 
+                name="title" 
+                value="{{ recipe.title }}" 
+                placeholder="Nome" 
+            >
+        </div>
+    </div>
+
+    <div>Autor da receita</div>
+        <div class="cooker">
+            <input 
+                type="text" 
+                name="cooker" 
+                value="{{ recipe.cooker }}" 
+                placeholder="Nome" 
+            >
+        </div>
+    </div>
+
+              
+    <div>Imagem da receita</div>
+        <div>
+            <input 
+                type="url" 
+                name="image" 
+                placeholder="http://"
+                value="{{ recipe.image }}"
+            >
+        </div>
+    </div>
+
+        <div>Ingredientes</div>
+    <div id="ingredients">
+            <div class="ingredient">
+        {# {% for ingredient  in recipe.ingredients %} #}
+                <input 
+                    type="text" 
+                    name="ingredients[]" 
+                    value="{{recipe.ingredients}}" 
+                    placeholder="Ingrediente" 
+                >
+            </div>
+        {# {% endfor %} #}
+    </div>
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+
+
+    <div id="preparations">
+        <div>Modo de preparo</div>
+            <div class="preparation">
+        {# {% for preparation in recipe.preparation %} #}
+                <input 
+                    type="text" 
+                    name="preparation[]" 
+                    value="{{recipe.preparation}}"
+                    placeholder="Preparo"
+                >
+            </div>
+        {# {% endfor %} #}
+    </div>
+        <button type="button" class="add-preparation">Adicionar novo passo</button>
+
+
+    <div class="item">
+        <div>Informações adicionais</div>
+            <div>
+                <textarea value="" name="information" cols="30" rows="10">{{recipe.information}}</textarea>
+            </div>
+    </div>
+
+
+    <button type="submit">Salvar receita</button>

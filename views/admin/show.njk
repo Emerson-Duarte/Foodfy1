@@ -1,0 +1,36 @@
+{% extends "admin/layout-admin.njk" %}
+
+{% block content %}
+
+ <section class="foods_recipe">
+        <div id={{recipe.id}} class="food_recipe">
+            <img src={{recipe.image}} alt=Imagem de {{recipe.name}}>
+            <h2 id= "title_recipe">{{recipe.title}}</h2>
+            <p id="author_recipe">por {{recipe.cooker}}</p>
+
+            <h3>Ingredientes</h3>
+
+            {% for ingredient in recipe.ingredients %}
+                    <ul>
+                        <li>{{[ingredient]}}</li>
+                    </ul>
+            {% endfor %}
+
+            <h3>Modo de preparo</h3>
+
+            {% for preparation in recipe.preparation %}
+                    <ul>
+                        <li>{{[preparation]}}</li>
+                    </ul>
+            {% endfor %}
+
+            <h3>Informações adicionais</h3>
+            <ol><li>{{recipe.information}}</li></ol>
+        </div>
+        <a href="{{ recipe.id }}/edit" class="button">Editar Receita</a>
+
+    </section>
+
+
+    <script src="/scripts-admin.js"></script>
+{% endblock content %}

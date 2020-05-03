@@ -5,3 +5,4 @@ for (let i = 0; i < foods.length; i++) {
         window.location.href = `/recipe/${i}`;
     });
 }
+
